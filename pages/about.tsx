@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container'
-import { Avatar, IconButton, List, ListItem, ListItemAvatar, ListItemText } from '@material-ui/core'
-import Image from 'next/image'
+import { Avatar } from '@material-ui/core'
 
 import DrawerController from '../src/components/drawer_controller';
 

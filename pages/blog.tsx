@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container'
-import { Avatar, IconButton, List, ListItem, ListItemAvatar, ListItemText } from '@material-ui/core'
-import Image from 'next/image'
 
 import DrawerController from '../src/components/drawer_controller';
 
@@ -25,9 +22,6 @@ const useStyles = makeStyles({
     flex: 1,
     height: '100%',
   },
-  contentContainer: {
-    flex: 1,
-  },
   divider: {
     width: '20%',
     border: '1px solid #F5F5F6',
@@ -44,7 +38,7 @@ const useStyles = makeStyles({
   headerText: {
     color: '#FFF'
   },
-  aboutContainer: {
+  contentContainer: {
     backgroundColor: '#F5F5F6',
     flex: 2,
     padding: '30px 0px 10px 0px',
@@ -80,10 +74,10 @@ const Blog = () => {
               <Typography className={classes.headerText} variant='h2'>Blog</Typography>
             </Grid>
             <Grid container className={classes.contentContainer} direction='column' alignItems='center'>
-                <Typography variant='h5'>Blog Page</Typography>
+                <Typography variant='h5'>Welcome to my Blog!</Typography>
                 <div className={classes.contentMeDivider} />
-                <Grid container className={classes.contentMeText}>
-                  <Typography>
+                <Grid container className={classes.contentMeText} justify='center'>
+                  <Typography align='center'>
                     This is where you can find my blog content. I write about programming, productivity, board games, and life!
                   </Typography>
                 </Grid>
